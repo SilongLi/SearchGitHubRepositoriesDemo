@@ -110,7 +110,6 @@
         weakSelf.pageCounts = totalCount;
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [weakSelf.searchBar resignFirstResponder];
             [weakSelf.tableView reloadData];
         });
     }];
